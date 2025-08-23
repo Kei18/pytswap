@@ -1,0 +1,29 @@
+[project]
+name = "pytswap"
+version = "0.1.0"
+description = "TSWAP"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyterlab>=4.4.3",
+    "matplotlib>=3.10.5",
+    "numpy>=2.2.6",
+    "pytest>=8.4.1",
+    "scikit-learn>=1.7.1",
+    "scipy>=1.15.3",
+]
+
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "jupyter-archive>=3.4.0",
+    "jupyterlab-code-formatter>=3.0.2",
+    "jupyterlab-lsp>=5.1.1",
+    "python-lsp-server>=1.12.2",
+    "ruff>=0.11.12",
+]
+
+[tool.uv]
+package = true
